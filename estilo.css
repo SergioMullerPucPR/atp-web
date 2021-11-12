@@ -1,0 +1,159 @@
+
+.header {
+    padding: 12px; /* some padding */
+    text-align: center; /* center the text */
+    background: #ffd102; /* green background */
+    color: #0066da; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+    font-size: 40px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffefb0;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: #45bbff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+.navbar a.active {
+    background-color: #45bbff; /* Grey background color */
+    color: #ffd102; /* Black text color */
+    font-size: large;
+}
+.navbar a.rightAct {
+    float: right;
+    background-color: #45bbff;
+    color: #ffd102;
+    font-size: large;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #459cff; /* Grey background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: #45bbff; /* White background color */
+    padding: 15px; /* Some padding */
+    font-size: 22px;
+}
+.main h3 {
+    text-align: center; /* Center the text */
+    font-size: 15pt;
+}
+.infoCadastrar {
+    font-size: 15pt;
+    height: 40px;
+    width: 600px;
+    border-bottom: 10px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 15px;
+    align-items: center;
+}
+.botaoCadastrar {
+    padding: 10px;
+    border: #333;
+    border-radius: 20px;
+    text-align: center;
+    background: #ffd102;
+    color: #0066da;
+    font-size: 20pt;
+
+}
+
+.footer {
+    padding: 10px; /* Some padding */
+    text-align: center; /* Center text*/
+    background-color: #000;
+    color: #ddd;
+    font-size: 10px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {
+    flex-direction: column;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.navbar a {
+    float: none;
+    width: 100%;
+}
+}
+
+.grid-container {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 640px 640px;
+    grid-gap: 10px;
+  } 
+  
+  .grid-container > div {
+    text-align: center;
+    font-size: 15px;
+    font-size: 30px;
+  }
+
+  .grid-container-inicio {
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+  } 
+  
+  .grid-container-inicio > div {
+    text-align: center;
+    background-color: #459cff;
+    padding: 20px 0;
+    font-size: 30px;
+    border: solid 5px;
+    
+
+  }
